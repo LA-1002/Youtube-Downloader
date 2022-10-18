@@ -10,6 +10,7 @@ def AudioConvert(m4):
     audio.write_audiofile(m3)
     audio.close()
     video.close()
+    return True;
 
 
 

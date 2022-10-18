@@ -14,14 +14,13 @@ def downloadVideo(url,path,stage):
     channel = video.author+'\\'
     path = path+channel;
     streams.download(filename=name,output_path=path)
-    
     time.sleep(2);
-    return True
+    return [True,name]
 
 url = 'https://www.youtube.com/watch?v=N0NejD-fDns';
 
 path = "C:\\Users\\leonn\\Videos\\Youtube\\"
 #path = "C:\\Users\\leonn\\Videos\\"
-files = downloadVideo(url,path,'')
+#files = downloadVideo(url,path,'')
 #print(files);
 
